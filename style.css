@@ -1,10 +1,11 @@
 body {
   background-color: #1f2937;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
-  outline-color:#3882f6;
+  color:#C8C6C6;
 }
 
 /* Navigation */
@@ -12,12 +13,10 @@ a {
 
 .nav-bar-container {
   background-color: #1f2937;
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  color: #e5e7eb;
   display: flex;
   flex-direction: row;
-
+  padding: 1rem 0 3rem 3rem;
   
 }
 
@@ -26,62 +25,61 @@ a {
   color: #f9faf8;
   flex: 3.5;
   text-align: left;
- 
-
+  margin-left: 4rem;
+  font-weight: 600;
+  padding-left: 5.5rem;
 }
 
-.nav-link-html {
-flex: .75;
-align-items: right;
-
-
+.nav-link-container {
+  display: flex;
+  direction: row;
+  flex: 3.4;
+  gap: 2rem;
+  margin-right: 5rem;
+  color:#C8C6C6;
 }
-
-.nav-link-css {
-flex: .75;
-  
-  
-}
-
-.nav-link-js {
-flex: .75;
-    
-    
-}
-
-.nav-link-aboutme {
-flex: .75;
       
-      
-}
-/* Intro Section */
+
+/* Section One - Intro */
 
 .container-one {
-  font-family: 'Roboto', sans-serif;
-  color: #f9faf8;
   display: flex;
   flex-direction: row;
+  margin-top:2rem;
+  margin-bottom: 7rem;
 }
 
 .section-one-left {
 flex: 1;
-margin: 10px 0 10px 40px;
-padding-left: 60px;
 }
 
 .intro-heading {
   font-size: 48px;
   font-weight: 900;
+  margin: 3rem 4rem 0 7rem;
+  padding-left: 5.5rem;
+  color: #f9faf8;
 }
 
 .intro-text {
   font-size: 18px;
-  margin-right: 60px;
+  color:#C8C6C6;
+  margin: .25rem 4rem 1rem 7rem;
+  padding-left: 5.5rem;
 }
 
 .about-me-button {
   background-color: #3882f6;
   color: #f9faf8;
+  width: 8.5rem;
+  height: 2.25rem;
+  border-radius: 8px;
+  border-style:none;
+  font-size: 18px;
+  font-weight:bold;
+  margin-left: 12.5rem;
+  text-align: center;
+  
 }
 
 .section-one-right {
@@ -89,8 +87,81 @@ padding-left: 60px;
 }
 
 .landing-page-image {
-  width: 250px;
-  height: auto;
-  margin: 35px 30px 30px 10px;
-  padding: 5px 0 0 50px;
+  width: 30rem;
+  height: 15rem;
+  margin: 3rem 4rem 0 0;
+}
+
+/* Section Two - Some Random Information */
+
+/* NOTE 1/10 9:54pm .... Cannot figure out how to get these damn boxes within the nested
+flexbox to center align/move closer together. Need to look into if I should replace the nested box with 
+the grid method. */
+
+
+.container-two {
+  /* display: flex;
+  flex-direction: column;  */
+  background-color: #f9faf8;
+}
+
+.section-two-heading {
+font-size: 36px;
+font-weight: 900;
+color: #1f2937;
+text-align: center;
+padding-top: 1.5rem;
+
+}
+
+.section-two-box-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.individual-box-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.box-one {
+ flex:1;
+ margin: auto;
+ padding: 1rem 0 6rem 0rem;
+ 
+}
+
+.box-two {
+  flex:1;
+  margin: auto;
+  padding: 1rem 0 6rem 0rem;
+ 
+}
+
+.box-three {
+  flex:1;
+  margin: auto;
+  padding: 1rem 0 6rem 0rem;
+
+}
+
+.box-four {
+flex:1;
+margin: auto;
+padding: 1rem 0 6rem 0rem;
+}
+
+.box-image {
+  width: 10rem;
+  height: 10rem;
+  border-style:solid;
+  border-radius: 10px;
+  border-color: #3882f6;
+}
+
+.box-text {
+  margin: 0 6rem 0 6rem;
 }
