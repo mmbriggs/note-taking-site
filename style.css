@@ -96,12 +96,16 @@ flex: 1;
 
 /* NOTE 1/10 9:54pm .... Cannot figure out how to get these damn boxes within the nested
 flexbox to center align/move closer together. Need to look into if I should replace the nested box with 
-the grid method. */
+the grid method. 
+
+NOTE 1/11 9:42am .... this information is what saved me-  "If you want to center a block element
+(like div, p, ul, etc) itself you need to set its width and set the horizontal margins to auto." THIS WORKED!!!
+Next time I am stuck, remember future self... set the width of the container. Don't be afraid of auto. */
 
 
 .container-two {
-  /* display: flex;
-  flex-direction: column;  */
+  display: flex;
+  flex-direction: column; 
   background-color: #f9faf8;
 }
 
@@ -110,48 +114,41 @@ font-size: 36px;
 font-weight: 900;
 color: #1f2937;
 text-align: center;
-padding-top: 1.5rem;
+padding-top: 3rem;
 
 }
 
 .section-two-box-container {
   display: flex;
   flex-direction: row;
-  justify-items: center;
+  margin: auto;
+  width: 40%;
+  justify-content:center;
+  align-items:center;
 }
 
 .individual-box-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: auto;
 }
 
 .box-one {
- flex:1;
- margin: auto;
- padding: 1rem 0 6rem 0rem;
+  padding: 1rem 1.75rem 7rem 1.75rem;
  
 }
 
 .box-two {
-  flex:1;
-  margin: auto;
-  padding: 1rem 0 6rem 0rem;
- 
+  padding: 1rem 1.75rem 7rem 1.75rem;
 }
 
 .box-three {
-  flex:1;
-  margin: auto;
-  padding: 1rem 0 6rem 0rem;
+  padding: 1rem 1.75rem 7rem 1.75rem;
 
 }
 
 .box-four {
-flex:1;
-margin: auto;
-padding: 1rem 0 6rem 0rem;
+  padding: 1rem 1.75rem 7rem 1.75rem;
 }
 
 .box-image {
@@ -163,5 +160,15 @@ padding: 1rem 0 6rem 0rem;
 }
 
 .box-text {
-  margin: 0 6rem 0 6rem;
+  margin: auto;
+  padding-top: .25rem;
+  color: #5A5A5A;
+  font-size: 18px;
+}
+
+/* Section Three - An Inspiring Quote */
+
+.container-three {
+  background-color: #e5e7eb;
+
 }
